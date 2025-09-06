@@ -24,7 +24,7 @@
           <h1 class="title lato-bold">Oasis do Litoral</h1>
           <h3 class="subtitle lato-light">
             Onde a tranquilidade encontra o conforto e cada momento transforma
-            suas férias em 
+            suas férias em
             <span class="details cookie-regular">luxo</span> e
             <span class="details cookie-regular">comodidade</span>
           </h3>
@@ -36,16 +36,47 @@
       </section>
 
       <section class="menu-booking">
-        <form>
-          <label>Localização</label>
-          <input type="name" placeholder="Informar o local" />
-          <label>Check In</label>
-          <input type="date" placeholder="Informar a data de entrada" />
-          <label>Check Out</label>
-          <input type="date" placeholder="Informar a data de saída" />
-          <label>Adultos</label>
-          <input type="number" placeholder="Informar a quantidade de Adultos" />
+        <form class="form-booking" action="submit" method="post">
+          <div class="input-group">
+            <div class="label-group"> 
+              <img class="img-label" src="assets/img/icons/location.svg" />
+              <label>Localização</label>
+            </div>
+            <select class="lato-bold" name="local" placeholder="Local">
+              <option value="" disabled selected>Local desejado</option>
+              <option value="praia-grande">Praia Grande</option>
+              <option value="ubatuba">Ubatuba</option>
+              <option value="santos">Santos</option>
+              <option value="guaruja">Guarujá</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <div class="label-group">
+              <img class="img-label" src="assets/img/icons/guest.svg" />
+              <label>Guests</label>
+            </div>
+            
+            <input class="lato-bold" type="number" min="1" max="10" placeholder="1" />
+          </div>
+          <div class="input-group">
+            <div class="label-group">
+              <img class="img-label" src="assets/img/icons/entrance.svg" />
+              <label>Check In</label>
+             </div>
+            
+            <input class="lato-bold" type="date" min="05/09/2025" />
+          </div>
+          <div class="input-group">
+            <div class="label-group">
+              <img class="img-label" src="assets/img/icons/entrance.svg" />
+              <label>Check Out</label>
+              </div>
+            
+            <input class="lato-bold" type="date" min="06/09/2025" />
+          </div>
+          
         </form>
+        <button class="btn-booking">Buscar</button>
       </section>
       <section class="about">
         <div class="container">
