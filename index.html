@@ -38,7 +38,7 @@
       <section class="menu-booking">
         <form class="form-booking" action="submit" method="post">
           <div class="input-group">
-            <div class="label-group"> 
+            <div class="label-group">
               <img class="img-label" src="assets/img/icons/location.svg" />
               <label>Localização</label>
             </div>
@@ -55,57 +55,98 @@
               <img class="img-label" src="assets/img/icons/guest.svg" />
               <label>Guests</label>
             </div>
-            
-            <input class="lato-bold" type="number" min="1" max="10" placeholder="1" />
+
+            <select class="lato-bold" name="guests" placeholder="Guests">
+              <option value="" disabled selected>Quantidade de hóspedes</option>
+              <option value="1">1 Hóspede</option>
+              <option value="2">2 Hóspedes</option>
+              <option value="3">3 Hóspedes</option>
+              <option value="4">4 Hóspedes</option>
+              <option value="5">5 Hóspedes</option>
+              <option value="6">6 Hóspedes</option>
+            </select>
           </div>
           <div class="input-group">
             <div class="label-group">
               <img class="img-label" src="assets/img/icons/entrance.svg" />
               <label>Check In</label>
-             </div>
-            
+            </div>
+
             <input class="lato-bold" type="date" min="05/09/2025" />
           </div>
           <div class="input-group">
             <div class="label-group">
               <img class="img-label" src="assets/img/icons/entrance.svg" />
               <label>Check Out</label>
-              </div>
-            
+            </div>
+
             <input class="lato-bold" type="date" min="06/09/2025" />
           </div>
-          
         </form>
         <button class="btn-booking">Buscar</button>
       </section>
+
       <section class="about">
-        <div class="container">
+        <h1 class="title-about lato-regular-italic">
+          Conectando pessoas a momentos unicos e <br />
+          <spam class="cookie-regular">experiencias inesqueciveis</spam>
+          <p class="description-about lato-regular">
+            Localizado em uma das praias mais paradisíacas do litoral
+            brasileiro, o <span>Hotel Oasis do Litoral </span> oferece uma
+            experiência exclusiva de conforto, sofisticação e contato com a
+            natureza. Com arquitetura contemporânea que se mistura à paisagem,
+            cada detalhe foi pensado para proporcionar uma estadia inesquecível.
+            O hotel conta com suítes com vista panorâmica para o mar,
+            gastronomia internacional de alto padrão e serviços personalizados
+            que garantem momentos de tranquilidade e bem-estar.
+          </p>
+        </h1>
+
+        <div class="container-about">
           <div class="card">
-            <h1>Lorem</h1>
-            <p>Lorem Lorem</p>
+            <h1>Diferenciais</h1>
+            <p>
+              Localizacao diferenciada , conforto, servicos 24h, experiencias unicas, atendimento personalizado e
+              gastronomia de alta qualidade.
+            </p>
             <img />
           </div>
           <div class="card">
-            <h1>Lorem</h1>
-            <p>Lorem Lorem</p>
+            <h1>Estrutura</h1>
+            <p> Suites exclusivas, adega climatizada, lounge bar, diversas piscinas, marina privativa para embarcacoes e esportes aquaticos</p>
             <img />
           </div>
           <div class="card">
-            <h1>Lorem</h1>
-            <p>Lorem Lorem</p>
+            <h1>Servicos</h1>
+            <p> All inclusive, bem-estar & Spa, experiencias aquaticas, servicos de atendimento a criancas (espaco kids, monitores, brinquedoteca), academia e muito mais</p>
             <img />
           </div>
         </div>
       </section>
+
       <section class="avaliacoes">
         <div class="container">
           <div class="card-large">
-            <p>LOREM LOREM LOREM LOREM</p>
+            <h1>O seu paraíso particular começa aqui</h1>
+            <p>Oferece uma experiência exclusiva de conforto, sofisticação e contato com a natureza.</p>
           </div>
           <div class="card-large-text">
-            <h3>12%</h3>
-            <h3>123.899</h3>
-            <h3>345</h3>
+            <div class="rating-group"> 
+              <h3>4.9</h3>
+              <p>Baseado em 4.670 mil avaliacoes</p>
+            </div>
+            <div class="rating-group">
+              <h3>3ª vez</h3>
+              <p> Vencedor do premio de melhor hotel spa all inclusive do Brasil</p>
+            </div>
+            <div class="rating-group">
+              <h3>5 estrelas</h3>
+              <p>Classificacao de luxo e conforto</p>
+            </div>
+            <div class="rating-group"> 
+              <h3>10 anos</h3>
+              <p>De experiencia e excelencia em servicos</p>
+            </div>
           </div>
         </div>
       </section>
